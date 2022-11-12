@@ -1,0 +1,1 @@
+from gym.envs.KG_env.env import Knowledgegraph_gym

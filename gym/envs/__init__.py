@@ -49,6 +49,14 @@ register(
     max_episode_steps=500,
 )
 
+# KG_env
+# ----------------------------------------
+register(
+    id="Knowledgegraph_gym-v0",
+    entry_point="gym.envs.KG_env:Knowledgegraph_gym",
+    max_episode_steps=1000,
+)
+
 # Box2d
 # ----------------------------------------
 
