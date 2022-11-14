@@ -33,6 +33,17 @@ register(
 
 register(
     id="CartPole-v1",
+    
+    
+    
+  # KG_env
+# ----------------------------------------
+register(
+    id="KG_task-v1",
+    entry_point="lgym.envs.Knowledge_graphs.KG_env:KG_task_env",
+    max_episode_steps=1000,
+)  
+    
     entry_point="gym.envs.classic_control.cartpole:CartPoleEnv",
     max_episode_steps=500,
     reward_threshold=475.0,
